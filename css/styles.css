@@ -6,6 +6,7 @@
     --colour-black-dark-14: #0d223b;
     --colour-black: #07121f;
     --colour-gray-light-90: #e6e6e6;
+    --colour-gray-light-80: #CCC;
     --colour-white: #e7eff9;
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
@@ -104,4 +105,20 @@ footer {
 .bottom-bar {
     background-color: var(--colour-black);
     color: var(--colour-white);
+}
+
+/* About Us */
+
+/* Salespeople */
+.salespeople {
+    background-color: var(--colour-gray-light-90);
+}
+
+.salesperson-tile {
+    /* border: 1px solid var(--colour-gray-light-80); */
+    border-radius: 8px;
+}
+
+.salesperson-tile img {
+    border-radius: 100%;
 }
