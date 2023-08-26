@@ -3,7 +3,9 @@
     --colour-secondary-light-70: #ff6666;
     --colour-secondary-opacity-10: rgba(255, 0, 0, 0.10);
     --colour-secondary: #ff0000;
+    --colour-black-dark-14: #0d223b;
     --colour-black: #07121f;
+    --colour-gray-light-90: #e6e6e6;
     --colour-white: #e7eff9;
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
@@ -73,6 +75,33 @@ button:hover {
 
 /* New Cars */
 .new-cars {
-    background-color: var(--colour-white);
+    background-color: var(--colour-white) !important;
     color: var(--colour-black);
+}
+
+.card-body a {
+    border: 1px solid transparent;
+    background-color: var(--colour-secondary);
+}
+
+.card-body a:hover {
+    border: 1px solid transparent;
+    background-color: var(--colour-secondary-light-70);
+}
+
+/* Used Cars */
+.used-cars {
+    background-color: var(--colour-gray-light-90) !important;
+}
+
+/* Footer */
+footer {
+    background-color: var(--colour-black-dark-14);
+    color: var(--colour-white);
+}
+
+/* Bottom bar */
+.bottom-bar {
+    background-color: var(--colour-black);
+    color: var(--colour-white);
 }
