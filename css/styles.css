@@ -1,0 +1,78 @@
+/* CSS Variables */
+:root {
+    --colour-secondary-light-70: #ff6666;
+    --colour-secondary-opacity-10: rgba(255, 0, 0, 0.10);
+    --colour-secondary: #ff0000;
+    --colour-black: #07121f;
+    --colour-white: #e7eff9;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--colour-black);
+    color: var(--colour-white) !important;
+}
+
+.navbar-brand img {
+    margin-top: -42px;
+    margin-right: 16px;
+}
+
+.nav-page-title {
+    color: var(--colour-white) !important;
+    font-size: 48px;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 32px;
+    border-bottom: 4px solid transparent;
+}
+
+.active {
+    border-bottom: 4px solid red;
+}
+
+.nav-link {
+    font-size: 20px;
+    color: var(--colour-white) !important;
+}
+
+/* Hero */
+.hero {
+    background-image: url(../img/hero-background-2160.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-section-title {
+    color: var(--colour-white);
+}
+
+.search-car-form-container {
+    border: 1px solid var(--colour-secondary);
+    background-color: var(--colour-secondary-opacity-10);
+    border-radius: 8px;
+}
+
+.search-car-form-container label {
+    color: var(--colour-white);
+}
+
+button {
+    border: 1px solid transparent !important;
+    color: var(--colour-white);
+    background-color: var(--colour-secondary) !important;
+    font-family: var(--font-family);
+}
+
+button:hover {
+    background-color: var(--colour-secondary-light-70) !important;
+}
+
+/* New Cars */
+.new-cars {
+    background-color: var(--colour-white);
+    color: var(--colour-black);
+}
