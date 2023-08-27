@@ -139,11 +139,20 @@ footer {
     background-color: transparent !important;
 }
 
-.car-details-content {
-    /* border: 1px solid var(--colour-black-dark-14); */
-}
-
 .interest-button,
 .interest-button:hover {
     color: var(--colour-white);
+}
+
+.register-interest-form {
+    border: 1px solid var(--colour-black-dark-14);
+    border-radius: 8px;
+}
+
+.form-label {
+    font-size: 12px;
+}
+
+button.btn-close {
+    background-color: transparent !important;
 }

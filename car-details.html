@@ -7,18 +7,11 @@
     <title>Cosmic Cars | Honda CR-V 2023</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <!-- jQuery 3.7.0 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-            integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="lib/jquery/jquery-3.7.0.min.js"></script>
 
     <!-- Bootstrap 5.3.1 CSS -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
-          integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"
-            integrity="sha512-ToL6UYWePxjhDQKNioSi4AyJ5KkRxY+F1+Fi7Jgh0Hp5Kk2/s8FD7zusJDdonfe5B00Qw+B8taXxF6CFLnqNCw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+    <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
 
     <!-- Fontawesome -->
     <link rel="stylesheet"
@@ -63,7 +56,7 @@
     <!-- Navbar end -->
 
     <!-- Car Details -->
-    <section class="car-details pt-5 pb-5">
+    <section class="car-details pt-5 pb-5 mb-5">
         <div class="container">
             <a href="index.html"
                class="back d-inline-block mb-4 text-decoration-none"><i
@@ -79,7 +72,7 @@
                 style.</p>
             <div class="car-details-content">
                 <div class="row">
-                    <div class="col-9">
+                    <div class="col-lg-7 col-xxl-9">
                         <!-- Start Carousel -->
                         <div id="carouselCarDetails" class="carousel slide"
                              data-bs-ride="true">
@@ -136,9 +129,14 @@
                             </button>
                         </div>
                         <!-- End Carousel -->
+                        <iframe width="100%" height="315"
+                                src="https://www.youtube.com/embed/ZjUi6usz_y4?si=8heclGU9rKPHwdNV"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                     </div>
-                    <div class="car-details-info p-4 col-3">
-                        <div class="row mb-4">
+                    <div class="car-details-info p-4 col-lg-5 col-xxl-3">
+                        <div class="row mb-3">
                             <div class="col-1">
                                 <i class="fas fa-tag"></i>
                             </div>
@@ -149,7 +147,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="row mb-4">
+                        <div class="row mb-3">
                             <div class="col-1">
                                 <i class="fas fa-car-side"></i>
                             </div>
@@ -159,26 +157,105 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="row mb-4">
+                        <div class="row mb-3">
                             <div class="col-1">
                                 <i class="fas fa-user"></i>
                             </div>
                             <div class="col-11">
                                 <h6 class="mb-1">Salesperson</h6>
-                                <p class="text-secondary mb-0">Cathy Ellis
-                                </p>
+                                <a href="about-us.html#cathyEllisProfile"
+                                   class="text-secondary mb-0">Cathy
+                                    Ellis
+                                </a>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row mb-4">
                             <div class="col text-center">
-                                <button class="interest-button btn">Register
+                                <button type="button"
+                                        class="interest-button btn"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#register-interest-form"
+                                        aria-expanded="false"
+                                        aria-controls="register-interest-form">Register
                                     Interest</button>
                             </div>
                         </div>
+                        <!-- Start Register Interest form -->
+                        <div class="row">
+                            <div class="register-interest-form collapse col p-3"
+                                 id="register-interest-form">
+                                <form class="interest-form">
+                                    <div class="mb-3">
+                                        <label for="interestName"
+                                               class="form-label">Name</label>
+                                        <input type="text" class="form-control"
+                                               id="interestName"
+                                               placeholder="Enter your name"
+                                               required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="interestEmail"
+                                               class="form-label">Email
+                                            address</label>
+                                        <input type="email" class="form-control"
+                                               id="interestEmail"
+                                               placeholder="Enter your email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="interestPhone"
+                                               class="form-label">Phone
+                                            Number&nbsp;&nbsp;<span
+                                                  class="info-popover"
+                                                  data-bs-container="body"
+                                                  data-bs-toggle="popover"
+                                                  data-bs-placement="top"
+                                                  data-bs-content="Only Australian mobile numbers, please."><i
+                                                   class="fas fa-circle-info"></i></span>
+                                        </label>
+                                        <input type="tel" class="form-control"
+                                               id="interestPhone"
+                                               placeholder="Enter your phone number">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="interestMessage"
+                                               class="form-label">Message&nbsp;&nbsp;<span
+                                                  class="info-popover"
+                                                  data-bs-container="body"
+                                                  data-bs-toggle="popover"
+                                                  data-bs-placement="top"
+                                                  data-bs-content="Maximum of 200 characters."><i
+                                                   class="fas fa-circle-info"></i></span></label>
+                                        <textarea class="form-control"
+                                                  id="interestMessage" rows="3"
+                                                  placeholder="Enter your message"></textarea>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit"
+                                                class="btn btn-primary"
+                                                id="submitQueryButton">Submit
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End Register Interest form -->
+
+                        <!-- Start query alert -->
+                        <div class="row">
+                            <div class="col">
+                                <div class="alert alert-success d-none alert-dismissible fade show"
+                                     role="alert" id="queryAlert">
+                                    Query alert.
+                                    <button type="button" class="btn-close"
+                                            data-bs-dismiss="alert"
+                                            aria-label="Close"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End query alert -->
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
     <!-- Car Details End -->
@@ -256,6 +333,7 @@
 
     <!-- Bootstrap Tootips initialisation -->
     <script src="js/activate-tooltips.js"></script>
+    <script src="js/submitQueryButton.js"></script>
     <script src="js/copyright-year.js"></script>
 </body>
 
