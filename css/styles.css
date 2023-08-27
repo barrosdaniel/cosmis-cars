@@ -3,6 +3,7 @@
     --colour-secondary-light-70: #ff6666;
     --colour-secondary-opacity-10: rgba(255, 0, 0, 0.10);
     --colour-secondary: #ff0000;
+    --colour-black-dark-30: #1c4a81;
     --colour-black-dark-14: #0d223b;
     --colour-black: #07121f;
     --colour-gray-light-90: #e6e6e6;
@@ -115,10 +116,34 @@ footer {
 }
 
 .salesperson-tile {
-    /* border: 1px solid var(--colour-gray-light-80); */
     border-radius: 8px;
 }
 
 .salesperson-tile img {
     border-radius: 100%;
+}
+
+/* Car Details */
+.back {
+    color: var(--colour-black-dark-14);
+}
+
+.back:hover {
+    color: var(--colour-black-dark-30);
+}
+
+.carousel-control-prev,
+.carousel-control-prev:hover,
+.carousel-control-next,
+.carousel-control-next:hover {
+    background-color: transparent !important;
+}
+
+.car-details-content {
+    /* border: 1px solid var(--colour-black-dark-14); */
+}
+
+.interest-button,
+.interest-button:hover {
+    color: var(--colour-white);
 }
